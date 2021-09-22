@@ -8,7 +8,8 @@ import ex24.Anagram;
 import static java.lang.System.out;
 
 /**
- *all thts left is to check for upper case
+ *UCF COP3330 Fall 2021 Assignment 2 Solution
+ *Copyright 2021 ivan pavlov
  */
 public class Pass {
     //static Scanner in = new Scanner(System.in);
