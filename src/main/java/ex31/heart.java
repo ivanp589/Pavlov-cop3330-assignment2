@@ -1,12 +1,13 @@
 package ex31;
 
-import ex29.badinput;
-
 import java.util.Scanner;
 
-import static ex26.PaymentCalculator.input;
+/**
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 ivan pavlov
+ */
+
 import static ex29.badinput.checkNum;
-import static java.lang.System.gc;
 import static java.lang.System.out;
 
 public class heart {
