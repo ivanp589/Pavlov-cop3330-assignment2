@@ -15,9 +15,10 @@ public class badinput {
 
     public static void main(String[] args) {
 
-        ;
+        ask();
         while(run() == 1) {
         out.println("Sorry. That's not a valid input.");
+        ask();
 
         }
     }
@@ -26,7 +27,6 @@ public class badinput {
     }
 
     public static int run(){
-        ask();
         int error=0;
         String a =(input());
         if(checkNum(a)==0){
@@ -49,8 +49,7 @@ public class badinput {
             int n = a.length();
             int error = 0;
                 for(int i=0;i<n;i++){
-                    if(a.charAt(i)>='0'&& a.charAt(i)<='9') {
-                    }
+                    if(a.charAt(i)>='0'&& a.charAt(i)<='9') {}
                     else error++;       //increments error variable everytime it find a letter
                 }return error;          //input is only valid if it returns zero
             //else return -1;    //-1 = zip is not the right amount of numbers
