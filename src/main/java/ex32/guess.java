@@ -21,7 +21,7 @@ public class guess {
             int diff = difficulty();
             int num = number(diff);
             prin();
-            int user = guess(num);
+            int user = guess();
             int count = hint(user, num, 1);
             out.println("You got it in " + count + " guesses!\n");
             out.print("Do you wish to play again (Y/N)? ");
@@ -32,21 +32,21 @@ public class guess {
     public static int hint(int user,int num,int counter){
         if(user<num){
             out.print("Too low. Guess again: ");
-            return hint(guess(num),num,counter+1);
+            return hint(guess(),num,counter+1);
         }
         else if(user>num){
             out.print("Too high. Guess again: ");
-            return hint(guess(num),num,counter+1);
+            return hint(guess(),num,counter+1);
         }
         return counter;
     }
 
-    public static int guess(int num){
+    public static int guess(){
         String str = in.next();
         if (checkNum(str)==0){
             return Integer.parseInt(str);
         }else{out.println("Input was not valid. What's your guess? ");
-            return guess(num);}
+            return guess();}
     }
 
     public static int number(int difficulty) {

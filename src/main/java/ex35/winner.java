@@ -17,8 +17,6 @@ public class winner {
 
         }
 
-
-
     public static List arraymaker(List<String> b){
         out.print("Enter a name: ");
         String a =in.nextLine();
