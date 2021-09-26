@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 ivan pavlov
+ *  store 0-3 in a list create a new method
  */
 
 import static java.lang.System.out;
