@@ -48,7 +48,7 @@ public class Pass {
         int Acheck = 0;
         int i=0;
         while(Acheck==0 && i < str1.length()) {
-            Acheck = Anagram.checker(charar[i], str2.length(), special, 0);
+            Acheck = checker(charar[i], str2.length(), special, 0);
             i++;
         }
         return Acheck;
@@ -56,6 +56,18 @@ public class Pass {
 
     public static void asker() {
         out.print("Please enter your password");
+    }
+
+    public static int checker(char given, int length,char[] str2,int b){
+        //while(true){
+        int ret=0;
+        if(b<length && given == str2[b])
+            return ret += 1;
+        else if(b==length)return ret;
+        else {
+            if(ret == 0) {
+                ret += checker(given, length, str2, b + 1);
+            } return ret; }
     }
 }
 

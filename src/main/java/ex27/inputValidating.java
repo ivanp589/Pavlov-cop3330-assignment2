@@ -52,7 +52,7 @@ public class inputValidating {
 
     }
 
-    private static int validateInput(String tocheck, int checkfor){
+    public static int validateInput(String tocheck, int checkfor){
         switch(checkfor){
 
             case 1:

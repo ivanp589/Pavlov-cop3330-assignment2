@@ -16,9 +16,11 @@ public class badinput {
     public static void main(String[] args) {
 
         ask();
-        while(run() == 1) {
+        String s= input();
+        while(run(s) == 1) {
         out.println("Sorry. That's not a valid input.");
         ask();
+        s=input();
 
         }
     }
@@ -26,9 +28,9 @@ public class badinput {
         out.print("What is the rate of return? ");
     }
 
-    public static int run(){
+    public static int run(String s){
         int error=0;
-        String a =(input());
+        String a =s;
         if(checkNum(a)==0){
             int b=Integer.parseInt(a);
             out.println(b);

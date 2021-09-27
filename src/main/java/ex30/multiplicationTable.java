@@ -5,7 +5,10 @@ import java.io.StringWriter;
 import java.util.Scanner;
 
 import static java.lang.System.*;
-
+/**
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 ivan pavlov
+ */
 public class multiplicationTable {
 
     static Scanner in = new Scanner(System.in);

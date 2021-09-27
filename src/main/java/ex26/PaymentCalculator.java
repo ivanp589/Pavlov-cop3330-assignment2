@@ -39,7 +39,7 @@ public class PaymentCalculator {
         double plus = (Math.pow(i+1,30));
            double  n= (log((1 + b/p * (1-plus))) / log(1 + i));
         double n1 = n*(-(double)1/(double)30);
-        out.print(plus);
+        //out.print(plus);
             return n1;
     }
     public static int transform(double apr){

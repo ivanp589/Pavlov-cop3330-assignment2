@@ -1,7 +1,10 @@
 package ex38;
 
 import java.util.Scanner;
-
+/**
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 ivan pavlov
+ */
 import static java.lang.System.out;
 
 public class filter {
@@ -27,7 +30,7 @@ public class filter {
         }
     }
 
-    private static String filterEvenNumbers(String[] a) {
+    public static String filterEvenNumbers(String[] a) {
         int length = a.length;
         String b = new String();
         for(int i=0;i<length;i++){
