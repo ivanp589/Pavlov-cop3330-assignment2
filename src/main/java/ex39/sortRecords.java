@@ -36,11 +36,13 @@ public class sortRecords {
             Set<Map.Entry<String,String>> names = empName.entrySet();
             Set<Map.Entry<String,String>> jobs = empJob.entrySet();
             Set<Map.Entry<String,String>> date = empDate.entrySet();
+
             String[] last = new String[empName.size()];
             String[] first = new String[empName.size()];
             String[] name = new String[empName.size()];
             String[] job = new String[empName.size()];
             String[] d = new String[empName.size()];
+
             int ncount=0;int jcount=0;int dcount=0;
 
             for(Map.Entry<String,String> nentry : names){
@@ -60,10 +62,6 @@ public class sortRecords {
             for (int tcount = 0; tcount < last.length; tcount++) {
                 System.out.printf("%-20s | %-20s | %-20s%n", name[tcount], job[tcount], d[tcount]);
             }
-
-
-
-
     }
 
     private String printstr(ArrayList<Map<String, String>> emplist, Map<String, String> empName, Map<String, String> empJob, Map<String, String> empDate) {
